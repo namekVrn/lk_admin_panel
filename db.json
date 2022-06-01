@@ -1,0 +1,44 @@
+{
+  "clients": [
+    {
+      "surname": "Балотская",
+      "name": "Оксана",
+      "patronymic": "Сергеевна",
+      "dateBirth": "12.12.12.",
+      "gender": "Мужской",
+      "tel": "+79613329072",
+      "image": "",
+      "comment": "poldasdsdsd",
+      "addressReg": "МАГИСТРАЛЬ 8-8",
+      "dateMontage": "12.12.12",
+      "dateСompletion": "12.12.12.",
+      "date": "27 мая 2022 г., 17:43:15",
+      "id": 1
+    },
+    {
+      "surname": "Ивашкин",
+      "name": "Александр",
+      "patronymic": "Сергеевич",
+      "dateBirth": "2022-05-12",
+      "gender": "Мужской",
+      "tel": "+79515571423",
+      "image": "",
+      "comment": "qopppp",
+      "addressReg": "Переулок здоровья 88а",
+      "dateMontage": "2022-05-03",
+      "dateСompletion": "2022-05-09",
+      "date": "27 мая 2022 г., 17:45:49",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

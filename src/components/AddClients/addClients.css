@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+.addClients__form--slice {
+  display: flex;
+}
+.addClients__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.addClients__form--info {
+  border: 1px dotted rgb(139, 176, 251);
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  margin-right: 10px;
+  flex-direction: column;
+}
+.addClients__form--info:last-child{
+    margin: 0;
+
+}
+.addClients__form--name,
+.addClients__form--surname,
+.addClients__form--patronymic {
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  border-radius: 6px;
+}
+.addClients__form--date {
+  width: 400px;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  border-radius: 6px;
+}
+.addClients__form--gender,
+.addClients__form--tel,
+.addClients__form--comment {
+  width: 400px;
+  padding: 15px;
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 22px;
+  flex-direction: column;
+  border-radius: 6px;
+}
+.addClients__form--addressReg{
+  height: 100%;
+  font-size: 22px;
+  border-radius: 6px;
+}
+.addClients__form--label{
+  display: flex;
+  flex-direction: column;
+}
+.addClients__form--btn {
+  padding: 15px;
+  background-color: rgb(28, 175, 104);
+  border-radius: 6px;
+  border: none;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+

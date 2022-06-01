@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
 import '../AddClients/addClients.css';
 import { useDispatch } from 'react-redux';
 import { addClient } from 'redux/clients/clients-operation';
-import { DatePicker,message,Divider , notification, Button} from 'antd';
+import { notification, } from 'antd';
 
 
-import { StarOutlined, StarFilled, StarTwoTone, UserAddOutlined } from '@ant-design/icons';
+import { UserAddOutlined } from '@ant-design/icons';
 import initializationState from '../utils/initialStateClients'
 const AddClients = () => {
   const dispatch = useDispatch()
@@ -46,7 +45,7 @@ const AddClients = () => {
     dateBirth,
     gender,
     tel,
-    image,
+    image, // eslint-disable-line
     comment,
     addressReg,
     dateMontage,

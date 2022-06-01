@@ -1,10 +1,9 @@
 import { Form, InputNumber, Input, Popconfirm, Table, Typography } from 'antd';
-import { DeleteOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchClientApi, clientUpdateApi } from 'components/utils/api';
+import { useDispatch} from 'react-redux';
+import { fetchClientApi } from 'components/utils/api';
 import { updateClient } from 'redux/clients/clients-operation';
 import '../ClientCard/clientcard.css';
 
@@ -47,7 +46,7 @@ const ClientCard = () => {
   const { idElem } = useParams();
   const [form] = Form.useForm();
   const [data, setData] = useState([]);
-  const [flags, setFlags] = useState(false);
+
 
   const [newDataState, setNewDataState] = useState([]);
   const [editingKey, setEditingKey] = useState('');

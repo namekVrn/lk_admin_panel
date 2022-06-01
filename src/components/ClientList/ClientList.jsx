@@ -19,19 +19,19 @@ const ClientList = () => {
   }, [])
   const {
       /*ignore jslint start*/
-    surname,
-    name,
-    patronymic,
-    dateBirth,
-    gender,
-    tel,
-    image,
-    comment,
-    addressReg,
-    date,
-    key,
-    dateСompletion,
-    dateMontage
+    surname, // eslint-disable-line
+    name, // eslint-disable-line
+    patronymic, // eslint-disable-line
+    dateBirth, // eslint-disable-line
+    gender, // eslint-disable-line
+    tel, // eslint-disable-line
+    image, // eslint-disable-line
+    comment, // eslint-disable-line
+    addressReg, // eslint-disable-line
+    date, // eslint-disable-line
+    key, // eslint-disable-line
+    dateСompletion, // eslint-disable-line
+    dateMontage // eslint-disable-line
     /*ignore jslint end*/
   } = clients;
   const showConfirm = (id) => {

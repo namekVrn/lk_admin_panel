@@ -19,6 +19,7 @@ const ClientList = () => {
   }, [])
   const {
       /*ignore jslint start*/
+
     surname, // eslint-disable-line
     name, // eslint-disable-line
     patronymic, // eslint-disable-line
@@ -32,7 +33,7 @@ const ClientList = () => {
     key, // eslint-disable-line
     dateСompletion, // eslint-disable-line
     dateMontage // eslint-disable-line
-    /*ignore jslint end*/
+
   } = clients;
   const showConfirm = (id) => {
     const { confirm } = Modal;

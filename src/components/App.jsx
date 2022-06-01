@@ -6,7 +6,7 @@ import AddClients from './AddClients/AddClients';
 import Tickets from './Tickets/Tickets';
 import ClientList from './ClientList/ClientList';
 import ClientCard from './ClientCard/ClientCard';
-import Test from './TestComponent/Test';
+
 import 'antd/dist/antd.css'
 import '../components/app.css'
 export const App = () => {
@@ -20,7 +20,6 @@ export const App = () => {
           <Route path="/clientList" element={<ClientList />} />
           <Route path="/clientList/:idElem/" element={<ClientCard/>}/>
           <Route path="/tickets" element={<Tickets />} />
-          <Route path="/test" element={<Test/>} />
           <Route path="*" element={<p>not found</p>} />
         </Route>
       </Routes>

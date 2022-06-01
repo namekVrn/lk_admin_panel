@@ -1,6 +1,4 @@
 import { createAction } from "@reduxjs/toolkit";
-import AddClients from "components/AddClients/AddClients";
-import { v1 as uuid } from 'uuid';
 //fetch clients
 export const fetchClientsLoading = createAction("clients/fetchClientsLoading");
 export const fetchClients = createAction("clients/fetchClients");

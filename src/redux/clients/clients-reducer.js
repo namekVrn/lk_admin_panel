@@ -5,7 +5,6 @@ import {
   fetchClients,
   fetchClientsError,
 
-
   clientsAdd,
   addClientsLoading,
   addClientsError,
@@ -14,9 +13,9 @@ import {
   deleteClientsError,
   deleteClientsLoading,
 
-  updateClientLoading,
-  clientUpdate,
-  updateClientError,
+  // updateClientLoading,
+  // clientUpdate,
+  // updateClientError,
 } from '../clients/action-clients';
 
 const itemsReducer = createReducer([], {

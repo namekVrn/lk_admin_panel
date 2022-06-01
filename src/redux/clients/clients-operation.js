@@ -8,14 +8,11 @@ import {
   deleteClientsLoading,
   deleteClient,
   deleteClientsError,
-  updateClientLoading,
   clientUpdate,
-  updateClientError, 
 } from '../clients/action-clients';
 
 import {
   fetchClientsApi,
-  fetchClientApi,
   addClientApi,
   deleteClientApi,
   clientUpdateApi,

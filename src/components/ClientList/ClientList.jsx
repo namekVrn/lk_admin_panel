@@ -18,6 +18,7 @@ const ClientList = () => {
     dispatch(fetchClientsGet())
   }, [])
   const {
+      /*ignore jslint start*/
     surname,
     name,
     patronymic,
@@ -31,6 +32,7 @@ const ClientList = () => {
     key,
     dateСompletion,
     dateMontage
+    /*ignore jslint end*/
   } = clients;
   const showConfirm = (id) => {
     const { confirm } = Modal;

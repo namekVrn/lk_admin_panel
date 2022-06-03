@@ -54,15 +54,14 @@ export const addClient = data => async dispatch => {
 };
 
 //updateClient
-export const updateClient = ({data, idElem}) => async dispatch => {
-  let num = await Number(idElem)
-
-  const updateClientItem = await clientUpdateApi(num, ...data)
-  dispatch(clientUpdate(updateClientItem))
-  console.log(updateClientItem)
+export const updateClient = (data) => async dispatch => {
+  // let num = await Number(idElem)
+  console.log(data[0])
+  // let obj = {num, redata} ;
+  const updateClientItem = await clientUpdateApi(data[0])
+  dispatch(await clientUpdate(updateClientItem))
+  
   // dispatch(clientUpdate({...updateClientItem}))
-
- 
 }
 
 //deleteClient

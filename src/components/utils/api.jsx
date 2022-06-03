@@ -12,9 +12,12 @@ export const addClientApi = (data) =>{
 export const deleteClientApi = (id) => {
     return axios.delete(`/clients/${id}`).then(r=>r)
 }
-export const clientUpdateApi = async (elId, newData) => {
-    console.log(elId, newData)
-    const newDataUp  = await axios.patch(`/clients/${elId}`, newData).then(({data})=>data)
+export const clientUpdateApi = async (data) => {
+
+    
+    let cardID = Number(data.id)
+    console.log(cardID)
+    const newDataUp  = await axios.patch(`/clients/${data.id}`, data).then(({data})=>data)
     console.log(newDataUp)
     return newDataUp
 }

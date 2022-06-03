@@ -52,14 +52,12 @@ const ClientCard = () => {
   const [editingKey, setEditingKey] = useState('');
   const isEditing = record => record.key === editingKey;
 
-  useEffect(async () => {
-    setNewDataState( await fetchClientApi(idElem)) 
-    dispatch(updateClient({idElem,data}))
-    console.log(newDataState)
-  }, [idElem,data])
-//   useEffect(async () => {
-//     dispatch(updateClient({idElem,data}))
-//   }, [newDataState]);
+  useEffect(async () => { // eslint-disable-line
+    setNewDataState( await fetchClientApi(idElem))  // eslint-disable-line
+   
+  }, [idElem,data]) // eslint-disable-line
+   dispatch(updateClient(data))
+
   console.log(data)
   const edit = record => {
     form.setFieldsValue({

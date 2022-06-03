@@ -14,7 +14,7 @@ import {
   deleteClientsLoading,
 
   // updateClientLoading,
-  // clientUpdate,
+  clientUpdate,
   // updateClientError,
 } from '../clients/action-clients';
 
@@ -23,7 +23,8 @@ const itemsReducer = createReducer([], {
   [clientsAdd]: (store, { payload }) => [payload, ...store],
   [deleteClient]: (state, { payload }) =>
     state.filter(({ id }) => id !== payload),
-  // [clientUpdate]:(state, {payload}) => state.map(el => el.id === payload.id ? {...state, payload}: state)
+    [clientUpdate]: (state, {payload}) => console.log(payload)
+
 });
  
 
